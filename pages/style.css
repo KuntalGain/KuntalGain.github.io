@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
     background-color: black;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,20 +24,24 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-nav .nav-logo{
+
+nav .nav-logo {
     width: 12%;
     height: 15vh;
     margin-left: 30px;
 }
-nav .nav-logo img{
+
+nav .nav-logo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-nav .hamburger{
+
+nav .hamburger {
     display: none;
 }
-nav .nav-menu{
+
+nav .nav-menu {
     right: 10px;
     top: 25px;
     width: 25%;
@@ -43,210 +49,268 @@ nav .nav-menu{
     display: none;
     background-color: rgb(12, 12, 12);
 }
-nav .nav-menu i{
+
+nav .nav-menu i {
     font-size: 2rem;
     margin-left: 180px;
 }
-nav .nav-menu ul{
+
+nav .nav-menu ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin: 20px;
 }
-.nav-menu ul li{
+
+.nav-menu ul li {
     margin: 20px;
     font-size: 1.7rem;
     transition: 0.3s all;
 }
-.nav-menu ul li a{
+
+.nav-menu ul li a {
     text-decoration: none;
 }
-.nav-menu ul li:hover{
+
+.nav-menu ul li:hover {
     transform: scale(1.1);
 }
-.nav-menu ul li a:hover{
+
+.nav-menu ul li a:hover {
     color: gold;
 }
-nav .nav-list{
+
+nav .nav-list {
     margin-left: 80px;
     width: 60%;
     height: 15vh;
 }
-nav .nav-list ul{
+
+nav .nav-list ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav .nav-list ul li{
-  margin: 35px;
-  list-style-type: none;
-  transition: 0.3s all;
-  font-weight: 600;
-  color: #fff;
+
+nav .nav-list ul li {
+    margin: 35px;
+    list-style-type: none;
+    transition: 0.3s all;
+    font-weight: 600;
+    color: #fff;
 }
-nav .nav-list ul li a{
+
+nav .nav-list ul li a {
     text-decoration: none;
     font-size: 1.2rem;
 }
-nav .nav-list ul li:hover{
+
+nav .nav-list ul li:hover {
     transform: scale(1.1);
 }
-.main{
+
+.main {
     height: 80vh;
     margin-top: 80px;
     padding: 25px;
     display: flex;
     justify-content: space-between;
 }
-.main .main-info{
+
+.main .main-info {
     padding: 20px;
     margin-left: 20px;
     width: 60%;
 }
-.main .main-info .main-desc{
+
+.main .main-info .main-desc {
     width: 100%;
     margin-left: 50px;
 }
-.main-desc h2{
+
+.main-desc h2 {
     font-size: 50px;
 }
-.main-desc h1{
+
+.main-desc h1 {
     font-size: 65px;
     font-weight: 500;
     color: gold;
 }
-.main-desc h3{
+
+.main-desc h3 {
     font-size: 48px;
 }
-.main-desc p{
+
+.main-desc p {
     font-size: 27px;
     margin-top: 30px;
 }
-.main-info .main-btn{
+
+.main-info .main-btn {
     margin-left: 140px;
     margin-top: 30px;
 }
-.main .main-img{
+
+.main .main-img {
     margin-right: 15px;
     margin-top: 30px;
     transition: 0.3s all;
 }
-.main .main-img img{
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+.main .main-img img {
+    border-radius: 15px;
+    height: 300px;
 }
-.main .main-img:hover{
+
+.main .main-img:hover {
     transform: scale(1.1);
 }
-.main-info .main-btn button{
+
+.main-info .main-btn button {
     padding: 15px;
     width: 10rem;
     color: #fff;
     transition: 0.3s all;
     border-radius: 10px;
 }
-.main-btn .cv-btn{
+
+.main-btn .cv-btn {
     background-color: red;
     border: none;
     font-size: 1rem;
+    border: white 1px solid;
+    box-shadow: 0 0 10px white;
 }
-.main-btn .git-btn{
+
+.main-btn .git-btn {
     margin-left: 50px;
     border: none;
     font-size: 1rem;
-    background-color: lawngreen;
+    background-color: black;
+    border: yellow 1px solid;
+    box-shadow: 0 0 10px yellow;
+
 }
-.main-info .main-btn button:hover{
+
+
+.main-info .main-btn button:hover {
     transform: scale(1.1);
 }
-.project{
+
+.project {
     margin-top: 60px;
     height: 80vh;
     width: 100%;
 }
-.project .project-title{
+
+.project .project-title {
     text-align: center;
     font-size: 2rem;
-    transition: 0.3s all;
+    transition: color 0.3s ease-in-out;
 }
-.project .project-title p:hover{
+
+.project .project-title p:hover {
     color: rgb(104, 84, 84);
 }
-.project .project-box{
+
+.project .project-box {
     padding: 50px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
     cursor: pointer;
 }
-.project-box .box:hover{
+
+.project-box .box:hover {
     transform: scale(1.05);
 }
-.project-box .box{
+
+.project-box .box {
     height: 62vh;
-    width: 25%;
-    transition: 0.3s all;
+    width: calc(25% - 20px);
+    transition: 0.3s ease-in-out;
     background-color: rgba(77, 56, 56, 0.253);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.box .box-img{
-    height: 75%;
+
+.box .box-img {
+    height: 60%;
     width: 100%;
     padding: 16px;
+    overflow: hidden;
 }
-.box .box-img img{
+
+.box .box-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
-.box .box-desc{
+
+.box .box-desc {
     text-align: center;
-    text-transform: uppercase;
+    padding: 16px;
 }
-.box-desc h2{
-    font-size: 1rem;
+
+.box-desc h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
-.box-desc button{
-    padding: 8px;
-    width: 5rem;
-    color: black;
-    margin-top: 10px;
-    font-size: 1rem;
-    text-transform: capitalize;
-    transition: 0.3s all;
-}
-.box-desc button:hover{
-    transform: scale(1.1);
+
+.box-desc button {
+    padding: 10px 16px;
+    color: white;
     background-color: coral;
     border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.experience{
+
+.box-desc button:hover {
+    transform: scale(1.1);
+    background-color: #ff6347;
+    /* a slightly darker shade of coral */
+}
+
+
+.experience {
     height: 80vh;
     width: 100%;
     display: flex;
     margin-top: 100px;
 }
-.experience .exp-title{
+
+.experience .exp-title {
     width: 60%;
     padding: 55px;
 }
-.experience .exp-title p{
+
+.experience .exp-title p {
     font-size: 2rem;
     font-weight: 600;
 }
-.experience .exp-title h3{
+
+.experience .exp-title h3 {
     font-size: 1.9rem;
     margin-top: 20px;
     font-weight: 500;
 }
-.experience .exp-desc{
+
+.experience .exp-desc {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2.5rem;
 }
-.exp-desc .exp-container{
+
+.exp-desc .exp-container {
     height: 15vh;
     width: 15vw;
     display: flex;
@@ -254,28 +318,34 @@ nav .nav-list ul li:hover{
     border: 1px solid white;
     transition: 0.3s all;
 }
-.exp-container .exp-img{
+
+.exp-container .exp-img {
     width: 40%;
     height: 100%;
 }
-.exp-desc .exp-img img{
+
+.exp-desc .exp-img img {
     width: 100%;
     height: 70%;
     object-fit: cover;
     margin-top: 15px;
     transition: 0.3s all;
 }
-.exp-desc h2{
+
+.exp-desc h2 {
     font-size: 1.4rem;
     margin-left: 10px;
 }
-.exp-desc .exp-container:hover{
+
+.exp-desc .exp-container:hover {
     transform: scale(1.1);
 }
-.exp-desc .exp-img img:hover{
+
+.exp-desc .exp-img img:hover {
     transform: scale(1.1);
 }
-.skill{
+
+.skill {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -283,22 +353,27 @@ nav .nav-list ul li:hover{
     height: 70vh;
     width: 100%;
 }
-.skill .skill-container{
+
+.skill .skill-container {
     margin-left: 35px;
 }
-.skill-container h2{
+
+.skill-container h2 {
     font-size: 2.3rem;
     padding-top: 40px;
 }
-.skill-container p{
+
+.skill-container p {
     font-size: 2rem;
     margin-top: 20px;
     margin-left: 15px;
 }
-.skill h2{
+
+.skill h2 {
     margin-left: 20px;
 }
-.skill .skill-content{
+
+.skill .skill-content {
     margin-right: 110px;
     margin-top: 30px;
     display: flex;
@@ -307,37 +382,45 @@ nav .nav-list ul li:hover{
     width: 30%;
     transition: 0.3s all ease-in-out;
 }
-.skill .skill-content:hover{
+
+.skill .skill-content:hover {
     transform: scale(1.1);
 }
-.skill .skill-content .skill-img{
+
+.skill .skill-content .skill-img {
     height: 80px;
 }
-.skill-content .skill-img img{
+
+.skill-content .skill-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     padding: 10px;
     transition: 0.3s all ease-in-out;
 }
-.skill-content .skill-img img:hover{
+
+.skill-content .skill-img img:hover {
     transform: scale(1.1);
 }
-.skill-content .skill-desc{
+
+.skill-content .skill-desc {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.skill-content .skill-desc p{
+
+.skill-content .skill-desc p {
     margin-left: 20px;
 }
-footer{
+
+footer {
     height: 60vh;
     width: 100%;
     background-color: rgb(31, 30, 30);
 }
-footer .footer-content{
+
+footer .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,12 +429,14 @@ footer .footer-content{
     padding: 20px 0;
     width: 100%;
 }
-footer .footer-content h2{
+
+footer .footer-content h2 {
     font-size: 2.5rem;
     color: orange;
     margin-top: 15px;
 }
-.footer-content .footer-div{
+
+.footer-content .footer-div {
     margin-top: 15px;
     width: 30%;
     height: 15vh;
@@ -359,13 +444,15 @@ footer .footer-content h2{
     flex-direction: column;
     margin-left: 40px;
 }
-.footer-content .footer-div input{
+
+.footer-content .footer-div input {
     height: 3vw;
     border-radius: 10px;
     border: none;
     color: black;
 }
-.footer-content .footer-div button{
+
+.footer-content .footer-div button {
     margin-top: 15px;
     width: 20%;
     height: 2vw;
@@ -376,35 +463,43 @@ footer .footer-content h2{
     border-radius: 10px;
     transition: 0.3s all ease-in-out;
 }
-.footer-div button:hover{
+
+.footer-div button:hover {
     transform: scale(1.1);
 }
-footer .contact-me{
+
+footer .contact-me {
     font-size: 2rem;
     margin-top: 15px;
     margin-right: 10px;
 }
-.contact-me i:hover{
-    transform: scale(1.1); 
+
+.contact-me i:hover {
+    transform: scale(1.1);
 }
-footer .copyright{
+
+footer .copyright {
     text-align: center;
 }
+
 @media (max-width: 1090px) {
-    nav .nav-logo{
+    nav .nav-logo {
         width: 15%;
         height: 15vh;
         margin-left: 30px;
     }
-    nav .hamburger{
+
+    nav .hamburger {
         display: inline-block;
         margin-right: 40px;
         font-size: 3rem;
     }
-    nav .nav-list{
-       display: none;
+
+    nav .nav-list {
+        display: none;
     }
-    nav .nav-menu{
+
+    nav .nav-menu {
         display: none;
         position: absolute;
         right: 10px;
@@ -412,96 +507,116 @@ footer .copyright{
         width: 45%;
         height: 50vh;
     }
-    nav #menu-bar{
+
+    nav #menu-bar {
         font-size: 2rem;
         margin-left: 320px;
     }
-    .nav-menu ul li{
+
+    .nav-menu ul li {
         margin: 20px;
         font-size: 2rem;
         transition: 0.3s all;
     }
-    .main{
+
+    .main {
         height: 95vh;
         margin-top: 20px;
         display: flex;
         flex-direction: column-reverse;
     }
-    .main .main-info{
+
+    .main .main-info {
         padding: 5px 10px;
         margin-left: 10px;
         width: 95%;
     }
-    .main .main-info .main-desc{
+
+    .main .main-info .main-desc {
         width: 100%;
         margin-left: 30px;
     }
-    .main-info .main-btn{
+
+    .main-info .main-btn {
         margin-left: 110px;
         margin-top: 34px;
     }
-    .main .main-img{
+
+    .main .main-img {
         margin-left: 165px;
         margin-top: 120px;
         width: 48%;
     }
-    .main-info .main-btn button{
+
+    .main-info .main-btn button {
         padding: 17px;
         font-size: 1.3rem;
         width: 10rem;
         color: #fff;
     }
-    .project{
+
+    .project {
         margin-top: 50px;
         height: 200vh;
     }
-    .project .project-title{
+
+    .project .project-title {
         text-align: center;
         font-size: 2.5rem;
     }
-    .project .project-box{
+
+    .project .project-box {
         padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
-    .project-box .box{
+
+    .project-box .box {
         height: 60vh;
         width: 80%;
         margin: 15px;
     }
-    .box .box-img{
+
+    .box .box-img {
         height: 75%;
         width: 100%;
         padding: 25px;
     }
-    .box-desc h2{
+
+    .box-desc h2 {
         font-size: 2.7rem;
     }
-    .box-desc button{
+
+    .box-desc button {
         padding: 13px;
         width: 8rem;
         margin-top: 16px;
         font-size: 1.8rem;
     }
-    .experience{
+
+    .experience {
         height: 50vh;
         display: flex;
         flex-direction: column;
     }
-    .experience .exp-title{
+
+    .experience .exp-title {
         width: 100%;
     }
-    .experience .exp-title p{
+
+    .experience .exp-title p {
         font-size: 3rem;
         text-align: center;
     }
-    .experience .exp-title h3{
+
+    .experience .exp-title h3 {
         font-size: 2.3rem;
         text-align: center;
     }
-    .experience .exp-desc{
+
+    .experience .exp-desc {
         margin-top: 40px;
         margin-left: 30px;
         display: grid;
@@ -509,32 +624,39 @@ footer .copyright{
         grid-column-gap: 2.5rem;
         grid-row-gap: 2rem;
     }
-    .exp-desc .exp-container{
+
+    .exp-desc .exp-container {
         height: 10vh;
         width: 40vw;
         display: flex;
         align-items: center;
     }
-    .exp-desc h2{
+
+    .exp-desc h2 {
         font-size: 1.8rem;
         margin-left: 10px;
     }
-    .skill{
+
+    .skill {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
         height: 40vh;
     }
-    .skill .skill-container{
+
+    .skill .skill-container {
         text-align: center;
     }
-    .skill-container h2{
+
+    .skill-container h2 {
         font-size: 2.5rem;
     }
-    .skill-container p{
+
+    .skill-container p {
         font-size: 2.3rem;
     }
-    .skill .skill-content{
+
+    .skill .skill-content {
         margin-top: 10px;
         margin-left: 110px;
         display: flex;
@@ -542,149 +664,181 @@ footer .copyright{
         height: 15vh;
         width: 95%;
     }
-    .skill .skill-content .skill-img{
+
+    .skill .skill-content .skill-img {
         height: 100%;
     }
-    .skill-content .skill-img img{
+
+    .skill-content .skill-img img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         padding: 14px;
     }
-    .skill-content .skill-desc{
+
+    .skill-content .skill-desc {
         margin-left: 10px;
         font-size: 1.5rem;
     }
-    .skill-content .skill-desc h1{
+
+    .skill-content .skill-desc h1 {
         margin-left: 10px;
         font-size: 2.5rem;
     }
-    footer{
+
+    footer {
         height: 35vh;
     }
-    footer .footer-content{
+
+    footer .footer-content {
         text-align: center;
         padding: 20px 0;
         width: 100%;
     }
-    footer .footer-content h2{
+
+    footer .footer-content h2 {
         font-size: 2.5rem;
         color: orange;
         margin-top: 15px;
     }
-    .footer-content .footer-div{
+
+    .footer-content .footer-div {
         width: 70%;
         height: 20vh;
         margin-left: 30px;
     }
-    .footer-content .footer-div input{
+
+    .footer-content .footer-div input {
         height: 7vw;
         font-size: 1.5rem;
     }
-    .footer-content .footer-div button{
+
+    .footer-content .footer-div button {
         margin-top: 20px;
         width: 40%;
         height: 9vw;
         margin-left: 130px;
         font-size: 2.2rem;
     }
-    footer .contact-me{
+
+    footer .contact-me {
         margin-top: -59px;
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center;
         font-size: 1.2rem;
     }
 }
+
 @media (max-width: 550px) {
-    nav .nav-logo{
+    nav .nav-logo {
         width: 20%;
         height: 15vh;
         margin-left: 30px;
     }
-    nav .nav-menu{
+
+    nav .nav-menu {
         position: absolute;
         right: 10px;
         top: 25px;
         width: 60%;
         height: 50vh;
     }
-    .nav-menu ul li{
+
+    .nav-menu ul li {
         margin: 20px;
         font-size: 2.1rem;
         transition: 0.3s all;
     }
-    .main{
+
+    .main {
         height: 100vh;
         margin-top: 22px;
         display: flex;
         flex-direction: column-reverse;
     }
-    .main .main-info{
+
+    .main .main-info {
         padding: 2px;
         margin-left: 5px;
         width: 95%;
         margin-top: -90px;
     }
-    .main .main-info .main-desc{
+
+    .main .main-info .main-desc {
         width: 100%;
         margin-left: 24px;
     }
-    .main-info .main-btn{
+
+    .main-info .main-btn {
         margin-left: 40px;
         margin-top: 34px;
     }
-    .main .main-img{
+
+    .main .main-img {
         margin-left: 105px;
         margin-top: 120px;
         width: 48%;
     }
-    .main-info .main-btn button{
+
+    .main-info .main-btn button {
         padding: 17px;
         font-size: 1.3rem;
         width: 10rem;
         color: #fff;
     }
-    .main-desc h2{
+
+    .main-desc h2 {
         font-size: 45px;
     }
-    .main-desc h1{
+
+    .main-desc h1 {
         font-size: 58px;
     }
-    .main-desc h3{
+
+    .main-desc h3 {
         font-size: 40px;
     }
-    .main-desc p{
+
+    .main-desc p {
         font-size: 27px;
         margin-top: 30px;
     }
-    .project .project-box{
+
+    .project .project-box {
         padding: 25px;
     }
-    .project-box .box{
+
+    .project-box .box {
         height: 60vh;
         width: 94%;
         margin: 15px;
     }
-    .experience .exp-title p{
+
+    .experience .exp-title p {
         font-size: 3rem;
         text-align: center;
     }
-    .experience .exp-title h3{
+
+    .experience .exp-title h3 {
         font-size: 1.8rem;
         text-align: center;
     }
-    .exp-desc h2{
+
+    .exp-desc h2 {
         font-size: 1.4rem;
         margin-left: 10px;
     }
-    .skill{
+
+    .skill {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
         height: 40vh;
     }
-    .skill .skill-content{
+
+    .skill .skill-content {
         margin-top: 10px;
         margin-left: 110px;
         display: flex;
@@ -692,157 +846,190 @@ footer .copyright{
         height: 15vh;
         width: 98%;
     }
-    .skill-content .skill-desc{
+
+    .skill-content .skill-desc {
         margin-left: 2px;
         font-size: 1.2rem;
     }
-    .skill-content .skill-desc h1{
+
+    .skill-content .skill-desc h1 {
         margin-left: 10px;
         font-size: 2rem;
     }
-    footer{
+
+    footer {
         height: 38vh;
     }
-    .footer-content .footer-div input{
+
+    .footer-content .footer-div input {
         height: 8vw;
         font-size: 1.5rem;
     }
-    .footer-content .footer-div button{
+
+    .footer-content .footer-div button {
         margin-top: 20px;
         width: 40%;
         height: 9vw;
         margin-left: 106px;
         font-size: 2.2rem;
     }
-    footer .contact-me{
+
+    footer .contact-me {
         margin-top: -59px;
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center;
         font-size: 0.9rem;
     }
 }
+
 @media (max-width:413px) {
-    nav .nav-logo{
+    nav .nav-logo {
         width: 20%;
         height: 12vh;
         margin-left: 30px;
     }
-    nav .nav-menu{
+
+    nav .nav-menu {
         position: absolute;
         right: 10px;
         top: 10px;
         width: 65%;
         height: 65vh;
     }
-    nav .nav-menu i{
+
+    nav .nav-menu i {
         font-size: 2rem;
         margin-left: 228px;
     }
-    .nav-menu ul li{
+
+    .nav-menu ul li {
         margin: 20px;
         font-size: 1.9rem;
         transition: 0.3s all;
     }
-    .main{
+
+    .main {
         height: 110vh;
         margin-top: 22px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
     }
-    .main .main-info{
+
+    .main .main-info {
         padding: 2px;
         margin-left: 5px;
         width: 98%;
         margin-top: 50px;
     }
-    .main .main-info .main-desc{
+
+    .main .main-info .main-desc {
         width: 100%;
         margin-left: 15px;
     }
-    .main-info .main-btn{
+
+    .main-info .main-btn {
         margin-left: 15px;
         margin-top: 34px;
         display: flex;
     }
-    .main .main-img{
+
+    .main .main-img {
         margin-left: 30px;
         margin-top: 160px;
         width: 48%;
     }
-    .main-info .main-btn button{
+
+    .main-info .main-btn button {
         padding: 15px;
         font-size: 1.15rem;
         width: 10rem;
         color: #fff;
     }
-    .main-desc h2{
+
+    .main-desc h2 {
         font-size: 38px;
     }
-    .main-desc h1{
+
+    .main-desc h1 {
         font-size: 50px;
     }
-    .main-desc h3{
+
+    .main-desc h3 {
         font-size: 32px;
     }
-    .main-desc p{
+
+    .main-desc p {
         font-size: 25px;
         margin-top: 30px;
         margin-right: 25px;
     }
-    .project{
+
+    .project {
         margin-top: 50px;
         height: 200vh;
     }
-    .project .project-title{
+
+    .project .project-title {
         text-align: center;
         font-size: 2rem;
     }
-    .project .project-box{
+
+    .project .project-box {
         padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
-    .project-box .box{
+
+    .project-box .box {
         height: 60vh;
         width: 98%;
         margin: 15px;
     }
-    .box .box-img{
+
+    .box .box-img {
         height: 75%;
         width: 100%;
         padding: 25px;
     }
-    .box-desc h2{
+
+    .box-desc h2 {
         font-size: 2.3rem;
     }
-    .box-desc button{
+
+    .box-desc button {
         padding: 13px;
         width: 8rem;
         margin-top: 16px;
         font-size: 1.8rem;
     }
-    .experience{
+
+    .experience {
         margin-top: -20px;
         height: 55vh;
         display: flex;
         flex-direction: column;
     }
-    .experience .exp-title{
+
+    .experience .exp-title {
         width: 100%;
     }
-    .experience .exp-title p{
+
+    .experience .exp-title p {
         font-size: 2rem;
         text-align: center;
     }
-    .experience .exp-title h3{
+
+    .experience .exp-title h3 {
         font-size: 1.7rem;
         text-align: center;
     }
-    .experience .exp-desc{
+
+    .experience .exp-desc {
         margin-top: 40px;
         margin-left: 20px;
         display: grid;
@@ -850,26 +1037,31 @@ footer .copyright{
         grid-column-gap: 2.5rem;
         grid-row-gap: 2rem;
     }
-    .exp-desc .exp-container{
+
+    .exp-desc .exp-container {
         height: 10vh;
         width: 40vw;
         display: flex;
         align-items: center;
     }
-    .exp-desc h2{
+
+    .exp-desc h2 {
         font-size: 1.2rem;
         margin-left: 10px;
     }
-    .skill{
+
+    .skill {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
         height: 40vh;
     }
-    .skill .skill-container{
+
+    .skill .skill-container {
         margin-right: 21px;
     }
-    .skill .skill-content{
+
+    .skill .skill-content {
         margin-top: 8px;
         margin-left: 110px;
         display: flex;
@@ -877,160 +1069,195 @@ footer .copyright{
         height: 12vh;
         width: 98%;
     }
-    .skill-container h2{
+
+    .skill-container h2 {
         font-size: 2rem;
     }
-    .skill-container p{
+
+    .skill-container p {
         font-size: 1.8rem;
     }
-    .skill-content .skill-desc{
+
+    .skill-content .skill-desc {
         margin-left: 2px;
         font-size: 1.2rem;
     }
-    .skill-content .skill-desc h1{
+
+    .skill-content .skill-desc h1 {
         margin-left: 10px;
         font-size: 2rem;
     }
-    .footer-content .footer-div input{
+
+    .footer-content .footer-div input {
         height: 8vw;
         font-size: 1.3rem;
         margin-right: 20px;
     }
-    .footer-content .footer-div button{
+
+    .footer-content .footer-div button {
         margin-top: 20px;
         width: 40%;
         height: 9vw;
         margin-left: 70px;
         font-size: 1.7rem;
     }
-    footer .contact-me{
+
+    footer .contact-me {
         margin-top: -49px;
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center;
         font-size: 0.8rem;
     }
 }
-@media (max-width: 376px){
-    nav .nav-logo{
+
+@media (max-width: 376px) {
+    nav .nav-logo {
         width: 15%;
         height: 12vh;
         margin-left: 30px;
     }
-    nav .hamburger{
+
+    nav .hamburger {
         display: inline-block;
         margin-right: 40px;
         font-size: 2rem;
     }
-    nav .nav-menu{
+
+    nav .nav-menu {
         position: absolute;
         right: 10px;
         top: 30px;
         width: 60%;
         height: 60vh;
     }
-    nav .nav-menu i{
+
+    nav .nav-menu i {
         font-size: 2rem;
         margin-left: 50px;
     }
-    .nav-menu ul li{
+
+    .nav-menu ul li {
         margin: 20px;
         font-size: 1.7rem;
         transition: 0.3s all;
     }
-    .main{
+
+    .main {
         height: 135vh;
         margin-top: 10px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
     }
-    .main .main-info{
+
+    .main .main-info {
         padding: 2px;
         margin-left: 5px;
         width: 100%;
         margin-top: -90px;
     }
-    .main .main-info .main-desc{
+
+    .main .main-info .main-desc {
         width: 100%;
         margin-left: 7px;
     }
-    .main-info .main-btn{
+
+    .main-info .main-btn {
         margin-left: 10px;
         margin-top: 34px;
         display: flex;
     }
-    .main .main-img{
+
+    .main .main-img {
         margin-left: 13px;
         margin-top: 20px;
         width: 20%;
     }
-    .main-info .main-btn button{
+
+    .main-info .main-btn button {
         padding: 15px;
         font-size: 1rem;
         width: 8rem;
         color: #fff;
     }
-    .main-desc h2{
+
+    .main-desc h2 {
         font-size: 40px;
     }
-    .main-desc h1{
+
+    .main-desc h1 {
         font-size: 52px;
     }
-    .main-desc h3{
+
+    .main-desc h3 {
         font-size: 25px;
     }
-    .main-desc p{
+
+    .main-desc p {
         font-size: 20px;
         margin-top: 30px;
     }
-    .project{
+
+    .project {
         margin-top: 10px;
         height: 220vh;
     }
-    .project .project-box{
+
+    .project .project-box {
         padding: 25px;
     }
-    .project .project-title{
+
+    .project .project-title {
         text-align: center;
         font-size: 2rem;
     }
-    .project-box .box{
+
+    .project-box .box {
         height: 65vh;
         width: 94%;
         margin: 15px;
     }
-    .box .box-img{
+
+    .box .box-img {
         height: 75%;
         width: 100%;
         padding: 25px;
     }
-    .box-desc h2{
+
+    .box-desc h2 {
         font-size: 2rem;
     }
-    .box-desc button{
+
+    .box-desc button {
         padding: 10px;
         width: 7.5rem;
         margin-top: 16px;
         font-size: 1.5rem;
     }
-    .experience{
+
+    .experience {
         height: 56vh;
         display: flex;
         flex-direction: column;
     }
-    .experience .exp-title{
+
+    .experience .exp-title {
         width: 100%;
     }
-    .experience .exp-title p{
+
+    .experience .exp-title p {
         font-size: 1.6rem;
         text-align: center;
     }
-    .experience .exp-title h3{
+
+    .experience .exp-title h3 {
         font-size: 1.2rem;
         text-align: center;
     }
-    .experience .exp-desc{
+
+    .experience .exp-desc {
         margin-top: 10px;
         margin-left: 15px;
         display: grid;
@@ -1038,27 +1265,33 @@ footer .copyright{
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
     }
-    .exp-desc h2{
+
+    .exp-desc h2 {
         font-size: 1rem;
         margin-left: 10px;
     }
-    .skill{
+
+    .skill {
         display: flex;
         flex-direction: column;
         margin-top: 180px;
         height: 40vh;
     }
-    .skill .skill-container{
+
+    .skill .skill-container {
         text-align: center;
         margin-right: 35px;
     }
-    .skill-container h2{
+
+    .skill-container h2 {
         font-size: 1.8rem;
     }
-    .skill-container p{
+
+    .skill-container p {
         font-size: 1.3rem;
     }
-    .skill .skill-content{
+
+    .skill .skill-content {
         margin-top: 10px;
         margin-left: 110px;
         display: flex;
@@ -1066,41 +1299,50 @@ footer .copyright{
         height: 15vh;
         width: 95%;
     }
-    .skill .skill-content .skill-img{
+
+    .skill .skill-content .skill-img {
         height: 100%;
     }
-    .skill-content .skill-img img{
+
+    .skill-content .skill-img img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         padding: 14px;
     }
-    .skill-content .skill-desc{
+
+    .skill-content .skill-desc {
         margin-left: 2px;
         font-size: 1rem;
     }
-    .skill-content .skill-desc h1{
+
+    .skill-content .skill-desc h1 {
         margin-left: 2px;
         font-size: 1.5rem;
     }
-    footer{
+
+    footer {
         height: 44vh;
     }
-    .footer-content .footer-div input{
+
+    .footer-content .footer-div input {
         height: 8vw;
         font-size: 1.3rem;
     }
-    .footer-content .footer-div button{
+
+    .footer-content .footer-div button {
         margin-top: 20px;
         width: 40%;
         height: 9vw;
         margin-left: 70px;
         font-size: 1.7rem;
     }
-    footer .contact-me{
+
+    footer .contact-me {
         margin-top: -49px;
     }
-    footer .copyright{
+
+    footer .copyright {
         text-align: center;
         font-size: 0.9rem;
     }

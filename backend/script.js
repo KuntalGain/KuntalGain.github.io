@@ -1,8 +1,8 @@
 var typed = new Typed('#element', {
-    strings: ['Mobile App Developer', 
+    strings: ['Mobile App Developer',
         '&amp; Flutter Developer'
     ],
-    typeSpeed: 50,
+    typeSpeed: 75,
 
     loop: true
 });
